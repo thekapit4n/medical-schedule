@@ -1,0 +1,101 @@
+@import './base.css';
+
+/* Global styles for Medical Schedule App */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+/* FullCalendar custom styles */
+.fc {
+  font-family: inherit;
+}
+
+.fc-toolbar-title {
+  font-size: 1.5rem !important;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+.fc-button {
+  background-color: #4CAF50 !important;
+  border-color: #4CAF50 !important;
+  color: white !important;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.fc-button:hover {
+  background-color: #45a049 !important;
+  border-color: #45a049 !important;
+}
+
+.fc-button:focus {
+  box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.3);
+}
+
+.fc-button-active {
+  background-color: #388e3c !important;
+  border-color: #388e3c !important;
+}
+
+.fc-daygrid-day-number {
+  color: #2c3e50;
+  font-weight: 500;
+}
+
+.fc-daygrid-day.fc-day-today {
+  background-color: rgba(76, 175, 80, 0.1) !important;
+}
+
+.fc-event {
+  border-radius: 4px;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.fc-event:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.fc-event-title {
+  font-weight: 600;
+}
+
+.fc-timegrid-slot {
+  height: 40px;
+}
+
+.fc-timegrid-slot-label {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+/* Business hours styling */
+.fc-timegrid-slot.fc-slot-disabled {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .fc-toolbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .fc-toolbar-title {
+    font-size: 1.2rem !important;
+  }
+  
+  .fc-button {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+  }
+}
